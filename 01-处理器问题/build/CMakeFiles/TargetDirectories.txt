@@ -1,0 +1,5 @@
+/home/parallels/Documents/od_prac/01-处理器问题/build/CMakeFiles/edit_cache.dir
+/home/parallels/Documents/od_prac/01-处理器问题/build/CMakeFiles/rebuild_cache.dir
+/home/parallels/Documents/od_prac/01-处理器问题/build/src/CMakeFiles/od_run.dir
+/home/parallels/Documents/od_prac/01-处理器问题/build/src/CMakeFiles/edit_cache.dir
+/home/parallels/Documents/od_prac/01-处理器问题/build/src/CMakeFiles/rebuild_cache.dir
