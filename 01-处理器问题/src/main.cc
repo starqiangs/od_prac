@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <bits/stdc++.h>
+#include <cstddef>
 
 // 处理器问题-01
 int main()
@@ -82,7 +84,16 @@ int main()
     case 2:
         break;
     case 4:
-        break;
+     if (first_size == 4)
+        {
+            ans = first_arr;
+            break;
+        }
+        else if (second_size == 4)
+        {
+            ans = second_arr;
+            break;
+        }
     case 8:
         break;
     default:
@@ -92,7 +103,7 @@ int main()
     std::cout << '[';
     for (int i = 0; i < ans.size(); i++)
     {
-        if(i == ans.size()-1)
+        if (i == ans.size() - 1)
         {
             std::cout << ans[i];
             break;

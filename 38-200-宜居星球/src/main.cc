@@ -46,7 +46,7 @@ int main()
                 vec[node.first - 1][node.second] = "YES";
                 my_que.push({node.first - 1, node.second});
             }
-            if (node.first + 1 > vec.size() && vec[node.first + 1][node.second] == "N0")
+            if (node.first + 1 < vec.size() && vec[node.first + 1][node.second] == "N0")
             {
                 vec[node.first + 1][node.second] = "YES";
                 my_que.push({node.first + 1, node.second});
