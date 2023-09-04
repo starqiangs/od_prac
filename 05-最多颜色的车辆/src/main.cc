@@ -36,16 +36,25 @@ int main()
     for (int end = 0; end < vec.size(); end++)
     {
         auto it = my_map.find(vec[end]);
-        if(it == my_map.end())
+        if (it == my_map.end())
         {
             my_map[vec[end]] = 1;
-        }else{
-            my_map[vec[end]] +=1;
+        }
+        else
+        {
+            my_map[vec[end]] += 1;
         }
         if (end - start + 1 == number)
         {
             max_count = FindMapMaxCount(my_map, max_count);
-            my_map.erase(vec[start]);
+            if (my_map[vec[start]] == 0)
+            {
+                my_map.erase(vec[start]);
+            }
+            else
+            {
+                my_map[vec[start]] -= 1;
+            }
             start++;
         }
     }
